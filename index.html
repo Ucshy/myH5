@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>这个世界需要更多英雄</title>
+    <style>
+        main{
+            width:100%;
+            padding:0 10px;
+            box-sizing:border-box;
+        }
+        mian > .hx{
+            width:100%;
+            height:100px;
+            background-color:#66ccff;
+            border-radius:10px;
+            margin-top:10px;
+            display:flex;
+        }
+        main > .hx > .left{
+            flex:1;
+        }
+        main > .hx > .right{
+            flex:2;
+            flex-wrap:wrap;
+            display:flex;
+        }
+        main > .hx > .right > a{
+            width:50%;
+            box-sizing:border-box;
+            border-left:1px solid #fff;
+            border-bottom:1px solid #fff;
+            display:block;
+            color:#fff;
+            line-height:50px;
+            text-align:center;
+            text-decoration:none;
+        }
+        main > .hx > .right > a:nth-last-of-type(-n+2){
+        border-bottom:none;
+        } 
+        main > .hx:nth-of-type(2)
+        {
+            background-color:#aa4b48;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
     <header>
     </header>
     <main>
         <section class="hx">
+            <div class="left"></div>
+            <div class="right">
             <a href="">rabbit</a>
             <a href="">tank</a>
             <a href="">best match</a>
             <a href="">kamen rider build</a>
+            </div>
         </section>
         <section class="hx">
+            <div class="left"></div>
+            <div class="right">
             <a href="">cyclone</a>
             <a href="">joker</a>
             <a href="">saomainongziminongzongmiyouyi</a>
             <a href="">kamen rider w</a>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <nav>
+            <a href="">声明</a>
+            <a href="">关于我</a>
+            <a href="">凑个数</a>
+        </nav>
+        <p>&copy;9102 Ucshy</p>
+       
+        </footer>
+    </div>   
 </body>
 </html>
